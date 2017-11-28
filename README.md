@@ -36,7 +36,7 @@ $ npm install live-server -g
 $ npm start
 ```
 
-### dev
+### Dev
 #1 terminal
 ```sh
 $ npm compile

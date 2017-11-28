@@ -25,6 +25,7 @@ To compile all js to dist/app.bundle.js
 
 ```sh
 $ npm compile
+``` 
 
 ### Run
 Install live-server globally
@@ -37,6 +38,7 @@ $ npm start
 ```
 
 ### Dev
+
 #1 terminal
 ```sh
 $ npm compile

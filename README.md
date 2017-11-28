@@ -24,12 +24,7 @@ $ npm install
 To compile all js to dist/app.bundle.js
 
 ```sh
-$ webpack
-```
-To watch run
-```sh
-$ webpack -w
-```
+$ npm compile
 
 ### Run
 Install live-server globally
@@ -37,6 +32,16 @@ Install live-server globally
 $ npm install live-server -g
 ```
 
+```sh
+$ npm start
+```
+
+### dev
+#1 terminal
+```sh
+$ npm compile
+```
+#2 terminal
 ```sh
 $ npm start
 ```

@@ -24,7 +24,7 @@ $ npm install
 To compile all js to dist/app.bundle.js
 
 ```sh
-$ npm compile
+$ npm run compile
 ``` 
 
 ### Run
@@ -34,18 +34,18 @@ $ npm install live-server -g
 ```
 
 ```sh
-$ npm start
+$ npm run start
 ```
 
 ### Dev
 
 #1 terminal
 ```sh
-$ npm compile
+$ npm run compile
 ```
 #2 terminal
 ```sh
-$ npm start
+$ npm run start
 ```
 
 Visit [http://localhost:8000](http://localhost:8000)

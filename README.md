@@ -1,4 +1,4 @@
-# RxJS Boilerplate
+# RxJS Events
 
 Boilerplate for building RxJS applications in a Webpack environment
 

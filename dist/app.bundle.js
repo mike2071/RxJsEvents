@@ -44,7 +44,7 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _jquery = __webpack_require__(1);
 
@@ -56,21 +56,80 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var btn = (0, _jquery2.default)('#btn');
+	console.log('Welcome to Rxjs Observables');
 
-	var btnStream$ = _Rx2.default.Observable.fromEvent(btn, 'click');
+	var output = (0, _jquery2.default)("#output");
+	output.append('Welcome to Rxjs Observables<br/><br/>');
 
-	var output = (0, _jquery2.default)('#output');
+	// ** Example One ** \\
+	// const btn = $("#btn");
+	// const btnStream$ = Rx.Observable.fromEvent(btn, "click");
 
-	btnStream$.subscribe(function (x) {
-	    console.log(x);
-	    output.append("Test", "" + x + "");
-	    console.log(output);
-	}, function (err) {
-	    console.log(err);
-	}, function (complete) {
-	    console.log(complete);
-	});
+	// btnStream$.subscribe(
+	//   x => {
+	//     console.log(x);
+	//     output.append(x.currentTarget.value);
+	//   },
+	//   err => {
+	//     console.log(err);
+	//   },
+	//   complete => {
+	//     console.log(complete);
+	//   }
+	// );
+
+	// ** Example Two ** \\
+	// const input = $("#input");
+	// const keyStream$ = Rx.Observable.fromEvent(input, "keyup");
+
+	// keyStream$.subscribe(
+	//   x => {
+	//     console.log(x.currentTarget.value);
+	//     output.append(x.currentTarget.value);
+	//   },
+	//   err => {
+	//     console.log(err);
+	//   },
+	//   complete => {
+	//     console.log(complete);
+	//   }
+	// );
+
+	// ** Example Three ** \\
+	// const mouseStream$ = Rx.Observable.fromEvent(document, "mousemove");
+
+	// mouseStream$.subscribe(
+	//   x => {
+	//     console.log(x);
+	//     output.html("<h1>X: " + x.clientX + " Y: " + x.clientY + "</h1>");
+	//   },
+	//   err => {
+	//     console.log(err);
+	//   },
+	//   complete => {
+	//     console.log(complete);
+	//   }
+	// );
+
+	// ** Example Four ** \\
+	// const numbers = [33,44,55,66,77];
+	// const numbersStream$ = Rx.Observable.from(numbers);
+
+	// // Note that completed run because we reach the end of our stream
+	// // but in the others it did not.
+	// numbersStream$.subscribe(
+	//     x => {
+	//       console.log(x);
+	//       output.append('<h1>' + x + '</h1>');
+	//     },
+	//     err => {
+	//       console.log(err);
+	//     },
+	//     complete => {
+	//       console.log('Completed');
+	//       output.append('<h1>Completed</h1>');
+	//     }
+	//   );
 
 /***/ }),
 /* 1 */
